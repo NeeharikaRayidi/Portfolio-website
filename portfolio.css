@@ -1,0 +1,77 @@
+body{
+   line-height: 2;
+    font-family: 'TimesNewRoman';
+    background-image: url('A_black_image.jpg');
+    text-align:left;
+    margin-left:5px;
+}
+h4{
+   font-size:25px;
+}
+h2{
+   font-size:30px;
+   color:rgba(223, 50, 50, 0.957);
+}
+h3{
+   color:rgba(223, 50, 50, 0.957);
+   font-family:'Times New Roman';
+}
+h1{
+   font-size:25px;
+   font-family:'Times New Roman';
+   color:rgba(223, 50, 50, 0.957);
+}
+.e{
+   font-size:25px;
+}
+h5{
+   color:rgba(223, 50, 50, 0.957);
+   font-size:30px;
+}
+
+.section { display: none; margin:0;padding: 20px 0;   }
+        #About:target, #Projects:target,#Skills:target, #Contact:target {  color:white;
+         display: block; }
+        nav { 
+         font-style:'Roboto';
+         margin: 20px; 
+        display: flex;
+        flex-direction: column; 
+        font-size: 50px;
+        background-image: url('A_black_image.jpg');
+    }
+        nav a { 
+            color:white;
+            font-size:50px;
+            text-decoration: none; 
+            padding: 10px; 
+            margin: 5px;
+             border: 1px solid black; 
+             display:inline;
+            border-radius:200px; }
+             nav a:hover {
+               color: red; 
+               background-color: black;
+           }
+           body:has(#About:target) nav a[href="#About"],
+body:has(#Projects:target) nav a[href="#Projects"],
+body:has(#Skills:target) nav a[href="#Skills"],
+body:has(#Contact:target) nav a[href="#Contact"] {
+    background: white;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px white;
+}
+.main{
+   display:flex;
+   align-items:center; 
+}
+.image{
+   width:180px;
+   border-radius:250px;
+   margin-right:140px;
+}
+.name{
+   font-size: 55px;
+   color:white;
+}
